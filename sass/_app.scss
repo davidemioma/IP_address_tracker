@@ -1,0 +1,24 @@
+body {
+  font-family: "Rubik";
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    width: 70%;
+  }
+}
+
+.header {
+  background-image: url(../images/pattern-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+
+  @media (min-width: 600px) {
+    height: 400px;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Address Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <div class="ip container">
+      <h2>IP Address Tracker</h2>
+
+      <form action="">
+        <input type="text" class="input" />
+        <button class="find">
+          <img src="./images/icon-arrow.svg" alt="" />
+        </button>
+      </form>
+
+      <div class="ip_info">
+        <span>
+          <h6>ip address</h6>
+          <p class="ip-text"></p>
+        </span>
+
+        <span>
+          <h6>location</h6>
+          <p class="location"></p>
+        </span>
+
+        <span>
+          <h6>timezone</h6>
+          <p class="timezone"></p>
+        </span>
+
+        <span class="isp">
+          <h6>isp</h6>
+          <p class="isp-text"></p>
+        </span>
+      </div>
+    </div>
+
+    <div id="contain-map">
+      <div id="map"></div>
+    </div>
+  </body>
+</html>
